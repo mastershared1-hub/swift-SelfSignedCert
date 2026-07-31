@@ -7,7 +7,7 @@ class BitString : NSObject {
     let bitCount: UInt
     
     convenience init(data:Data) {
-        self.init(bytes: data.bytes)
+        self.init(bytes: Array(data.bytes))
     }
     
     init(bytes:[UInt8]) {
